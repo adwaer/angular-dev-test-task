@@ -1,4 +1,4 @@
-import { WeatherLine } from '@domain/interfaces';
+import { WeatherLine } from '@domain/models/weather-line';
 import { timeDecorator } from '@domain/helpers/decorators';
 
 export const ForecastMappers = {

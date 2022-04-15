@@ -1,4 +1,4 @@
-import { WeatherTemp } from '@domain/interfaces/api-responses';
+import { WeatherTemp } from '@domain/models/api-responses';
 
 export interface WeatherLine {
 	city: string;

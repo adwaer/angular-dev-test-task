@@ -5,7 +5,7 @@ import { ForecastState } from '../state/forecast.state';
 import { filter, map, mergeMap, Observable, takeUntil } from 'rxjs';
 import loading from '@domain/helpers/loading';
 import { temperatureDecorator } from '@domain/helpers/decorators';
-import { WeatherLine } from '@domain/interfaces';
+import { WeatherLine } from '@domain/models/weather-line';
 import { ActionType } from '@ngxs/store/src/actions/symbols';
 
 export abstract class ForecastBase extends Disposable implements OnInit {

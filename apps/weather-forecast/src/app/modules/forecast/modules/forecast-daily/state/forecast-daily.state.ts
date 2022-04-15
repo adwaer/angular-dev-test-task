@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Action, Selector, State, StateContext } from '@ngxs/store';
 import { ForecastDailyModel } from './forecast-daily.model';
-import { WeatherLine } from '@domain/interfaces';
+import { WeatherLine } from '@domain/models/weather-line';
 import { ForecastDailyFetch } from './forecast-daily.actions';
 import { WeatherForecastApiService } from '@services/weather-forecast-api.service';
 import { Observable, tap } from 'rxjs';

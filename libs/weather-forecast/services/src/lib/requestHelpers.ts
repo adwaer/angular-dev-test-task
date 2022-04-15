@@ -1,6 +1,8 @@
 import { environment } from '../../../../../apps/weather-forecast/src/environments/environment';
-import { City, WeatherLine, WeatherTemp, WeatherTempDaily } from '@domain/interfaces';
 import { HttpParams } from '@angular/common/http';
+import { City } from '@domain/models/city';
+import { WeatherTemp, WeatherTempDaily } from '@domain/models/api-responses';
+import { WeatherLine } from '@domain/models/weather-line';
 
 export const rangeApiOptions = (city: City, exclude: 'daily' | 'hourly'): Record<string, string> => ({
 	lat: city.lat.toString(),

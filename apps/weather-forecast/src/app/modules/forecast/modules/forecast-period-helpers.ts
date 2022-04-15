@@ -1,5 +1,5 @@
 import { first, map, Observable, of } from 'rxjs';
-import { WeatherLine } from '@domain/interfaces';
+import { WeatherLine } from '@domain/models/weather-line';
 import { WeatherForecastApiService } from '@services/weather-forecast-api.service';
 
 export const fetchForecastApi = (service: WeatherForecastApiService, mode: 'daily' | 'hourly') => {

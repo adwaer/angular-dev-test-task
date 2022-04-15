@@ -2,9 +2,11 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { catchError, EMPTY, map, Observable, pluck, Subject, switchMap, throwError } from 'rxjs';
 
-import { City, DailyWeather, HourlyWeather, WeatherLine } from '@domain/interfaces';
 import { environment } from '../../../../../apps/weather-forecast/src/environments/environment';
 import { cityApiOptions, getHttpParams, rangeApiOptions, weatherLineMappers } from '@services/requestHelpers';
+import { WeatherLine } from '@domain/models/weather-line';
+import { City } from '@domain/models/city';
+import { DailyWeather, HourlyWeather } from '@domain/models/api-responses';
 
 @Injectable()
 export class WeatherForecastApiService {
