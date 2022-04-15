@@ -4,7 +4,8 @@
 		"paths": {
 			"@bp/line-chart/models": ["libs/line-chart/models/src/index.ts"],
 			"@bp/line-chart/services": ["libs/line-chart/services/src/index.ts"],
-			"@bp/weather-forecast/services": ["libs/weather-forecast/services/src/index.ts"]
+			"@domain/*": ["libs/weather-forecast/domain/*"],
+			"@services/*": ["libs/weather-forecast/services/src/lib/*"]
 		},
 		"baseUrl": ".",
 		"rootDir": ".",
@@ -14,6 +15,7 @@
 		"typeRoots": ["node_modules/@types"],
 		"lib": ["es2018", "dom", "esnext", "esnext.asynciterable"],
 		"types": ["node"],
+
 		"noImplicitAny": true,
 		"noImplicitReturns": true,
 		"noImplicitThis": true,
@@ -45,7 +47,8 @@
 		"strictTemplates": true,
 		"strictInputAccessModifiers": true,
 		"strictInjectionParameters": true,
-		"annotationsAs": "decorators"
+		"annotationsAs": "decorators",
+		"useUnknownInCatchVariables": false
 	},
 	"exclude": ["node_modules", "tmp", "dist"]
 }

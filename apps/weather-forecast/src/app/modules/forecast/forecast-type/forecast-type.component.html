@@ -1,0 +1,4 @@
+<div *ngIf="type$ | async as type">
+	<button mat-flat-button [color]="type === 1 ? 'primary' : undefined" routerLink="hourly">Hourly</button>
+	<button mat-flat-button [color]="type === 2 ? 'primary' : undefined" routerLink="daily">Daily</button>
+</div>

@@ -1,0 +1,19 @@
+table {
+	width: 100%;
+
+	tr {
+		height: 46px;
+	}
+
+	th,
+	td {
+		min-width: 50px;
+
+		> div {
+			width: 70px;
+			height: 25px;
+			background: #80808066;
+			margin: 10px;
+		}
+	}
+}

@@ -1,0 +1,9 @@
+<ng-container *ngIf="isLoading$ | async; else content">
+	<bp-table-loader cols="9" rows="3"></bp-table-loader>
+</ng-container>
+
+<ng-template #content>
+	<ng-container *ngIf="columns$ | async as columns">
+		<bp-forecast-table [columns]="columns" [rows]="rows$ | async"></bp-forecast-table>
+	</ng-container>
+</ng-template>

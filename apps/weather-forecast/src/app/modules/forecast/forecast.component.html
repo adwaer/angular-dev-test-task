@@ -1,0 +1,18 @@
+<div class="forecast">
+	<mat-card>
+		<mat-card-subtitle> Forecast</mat-card-subtitle>
+		<mat-card-title> Check the weather forecast!</mat-card-title>
+		<mat-card-content>
+			<div class="forecast__filters">
+				<bp-forecast-search></bp-forecast-search>
+				<bp-forecast-type></bp-forecast-type>
+			</div>
+		</mat-card-content>
+	</mat-card>
+
+	<mat-divider inset></mat-divider>
+
+	<div class="forecast__content">
+		<router-outlet></router-outlet>
+	</div>
+</div>

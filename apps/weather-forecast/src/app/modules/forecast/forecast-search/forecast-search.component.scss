@@ -1,0 +1,8 @@
+button {
+	margin: 5px;
+
+	&:hover {
+		border: 1px solid;
+		border-radius: 0;
+	}
+}

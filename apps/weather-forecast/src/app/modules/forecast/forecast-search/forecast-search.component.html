@@ -1,0 +1,21 @@
+<div class="forecast-search">
+	<form [formGroup]="formGroup" novalidate (ngSubmit)="submit()">
+		<mat-form-field appearance="outline">
+			<mat-label>City</mat-label>
+			<input autofocus matInput type="text" formControlName="city" autocomplete="off" />
+			<mat-icon matSuffix>city</mat-icon>
+			<mat-hint>City is required and min length is 2 symbols</mat-hint>
+			<mat-error>
+				<div class="icon-error">
+					<div class="error-container">
+						<span *ngIf="formControl.hasError('required')"> Required field </span>
+						<span *ngIf="formControl.hasError('minlength')"> Min length is 2 symbols </span>
+					</div>
+				</div>
+			</mat-error>
+		</mat-form-field>
+		<button type="submit" mat-icon-button color="accent" aria-label="Submit">
+			<mat-icon> search </mat-icon>
+		</button>
+	</form>
+</div>
